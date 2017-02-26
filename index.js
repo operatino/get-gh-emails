@@ -44,7 +44,7 @@ const run = async(csvPath, limit) => {
     const nonEmptyResults = results.filter(item => item !== '');
 
     console.log('results', JSON.stringify(nonEmptyResults, null, 2));
-    console.log(`got ${limitUsersLength - nonEmptyResults.length} out of ${limitUsersLength}`);
+    console.log(`got ${nonEmptyResults.length} out of ${limitUsersLength}`);
   });
 };
 
